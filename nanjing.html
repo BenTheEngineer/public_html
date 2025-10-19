@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌟 南京秋日舒適遊 (行程卡)</title>
+    <style>
+        /* --- Base & Layout --- */
+        body {
+            font-family: 'PingFang TC', 'Microsoft JhengHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+        h1 {
+            color: #8B0000; /* 金陵古都紅 */
+            text-align: center;
+            border-bottom: 4px solid #f0e68c;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #4a4a4a;
+            border-left: 6px solid #8B0000;
+            padding-left: 12px;
+            margin-top: 40px;
+            font-size: 1.8em;
+        }
+        /* --- Tip Box --- */
+        .tip-box {
+            background-color: #fff8e1;
+            border: 2px solid #ffecb3;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            color: #6d4c41;
+            transition: all 0.3s ease-in-out;
+        }
+        .tip-box:hover {
+            box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+        }
+        .tip-box h3 {
+            color: #d84315;
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        /* --- Accordion Tabs --- */
+        .accordion-tab {
+            margin-bottom: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        .tab-header {
+            background-color: #8B0000;
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .tab-header:hover {
+            background-color: #a02020;
+        }
+        .tab-content {
+            background-color: #ffffff;
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+        .tab-header.active .arrow {
+            transform: rotate(180deg);
+        }
+        .arrow {
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+            margin-left: 10px;
+        }
+        .content-inner {
+            padding: 15px 0;
+        }
+        .note {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+        }
+        /* --- Hotel Section --- */
+        .hotel-comparison {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .hotel-option {
+            flex: 1;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: transform 0.3s ease;
+        }
+        .hotel-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .hotel-option h3 {
+            color: #1e88e5;
+            border-bottom: 2px solid #1e88e5;
+        }
+        .hotel-option.best h3 {
+            color: #008000;
+            border-color: #008000;
+        }
+        /* --- Button --- */
+        .action-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin-top: 25px;
+            background-color: #ff6347; /* 鮮紅色 */
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s;
+        }
+        .action-button:hover {
+            background-color: #e55337;
+        }
+        .action-button:active {
+            transform: scale(0.99);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🌟 南京秋日舒適遊 (5天4夜)</h1>
+    <p style="text-align: center; font-size: 1.1em; color: #555;">
+        **旅遊日期：** 10月29日早上 至 11月2日晚上
+    </p>
+
+    <div class="tip-box">
+        <h3>📢 貼心提醒</h3>
+        <ul>
+            <li>✅ **交通方式：** 市內以方便的**地鐵**為主，景點之間可直接**打車**（網約車）更省力舒適。</li>
+            <li>✅ **輕鬆遊玩：** **鍾山風景區**等大景點我們將會搭乘**觀光車**，讓媽咪不用走太多冤枉路。</li>
+            <li>✅ **天氣衣著：** 10月底秋末，早晚溫差大，記得帶**保暖外套和毛衣**。</li>
+            <li>✅ **門票預約：** 我會負責提前預約好所有需預約的門票！</li>
+        </ul>
+    </div>
+
+    <h2>📅 行程詳情 (點擊展開)</h2>
+
+    <div class="accordion-tab">
+        <div class="tab-header" onclick="toggleTab(this)">
+            <span>第 1 天 (10/29)：近代風雲與秦淮夜色</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="tab-content">
+            <div class="content-inner">
+                <h3>上午：抵達與安頓</h3>
+                <p>前往酒店（建議新街口或夫子廟一帶）辦理入住手續，稍作休息。</p>
+                <h3>下午：**總統府**</h3>
+                <p>了解民國歷史，欣賞宏偉的歷史建築群。景區平坦，步行量適中。</p>
+                <p><strong>門票：</strong> 約 ¥40。</p>
+                <h3>晚上：**夫子廟-秦淮河風光帶**</h3>
+                <p>晚餐品嚐秦淮小吃，飯後散步，欣賞秦淮河迷人的夜景與燈光。</p>
+                <div class="note">💡 **貼士：** 總統府靠近地鐵，出行方便。夫子廟晚上人多，注意安全。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-tab">
+        <div class="tab-header" onclick="toggleTab(this)">
+            <span>第 2 天 (10/30)：金陵秋色與帝王陵寢</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="tab-content">
+            <div class="content-inner">
+                <h3>全天：**鍾山風景區** (明孝陵、美齡宮、中山陵)</h3>
+                <p>這天是賞秋重點！欣賞明孝陵**石象路**的紅葉和銀杏。遊覽「最美項鍊」**美齡宮**。</p>
+                <p><strong>交通：</strong> 景區內**必買觀光車票**（約 ¥50 不限次），輕鬆往返各景點。</p>
+                <p><strong>中山陵：</strong> 階梯較多，**如體力不佳，遠觀即可，或只走到「博愛坊」**。</p>
+                <p><strong>門票：</strong> 多景點聯票約 ¥98。</p>
+                <h3>晚餐：**南京大牌檔**</h3>
+                <p>在復古環境中一次品嚐多種地道金陵美食。</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accordion-tab">
+        <div class="tab-header" onclick="toggleTab(this)">
+            <span>第 3 天 (10/31)：文化底蘊與古街漫遊</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="tab-content">
+            <div class="content-inner">
+                <h3>上午：**南京博物院**</h3>
+                <p>中國三大博物館之一，室內景點，可作為腳力緩衝休息。展品豐富，需提前**預約**。</p>
+                <p><strong>門票：</strong> **免費入場**。</p>
+                <h3>下午：**老門東歷史文化街區**</h3>
+                <p>傳統老南京建築群，適合輕鬆閒逛、拍照、品嚐小店美食，步行壓力小。</p>
+                <h3>晚上：老門東/新街口用餐</h3>
+                <p>在古街享受慢生活，或回到新街口享受現代化晚餐。</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="accordion-tab">
+        <div class="tab-header" onclick="toggleTab(this)">
+            <span>第 4 天 (11/1)：湖光山色或佛教聖地</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="tab-content">
+            <div class="content-inner">
+                <h3>上午：**古雞鳴寺** & **玄武湖公園**</h3>
+                <p>參觀古寺（可俯瞰玄武湖），然後到玄武湖畔散步，呼吸新鮮空氣。玄武湖區平坦，設有觀光車。</p>
+                <h3>備選：**牛首山文化旅遊區** (如對佛教文化有興趣)</h3>
+                <p>欣賞震撼的佛頂宮。**景區內需搭乘觀光車**。</p>
+                <h3>晚上：新街口購物/晚餐</h3>
+                <p>採購手信，享受旅程最後的晚餐。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-tab">
+        <div class="tab-header" onclick="toggleTab(this)">
+            <span>第 5 天 (11/2)：悠閒告別</span>
+            <span class="arrow">▼</span>
+        </div>
+        <div class="tab-content">
+            <div class="content-inner">
+                <h3>上午：自由活動</h3>
+                <p>可回味喜歡的景點，或前往**頤和路公館區** (民國建築群) 悠閒散步。</p>
+                <h3>下午/晚上：準備前往機場/火車站</h3>
+                <p>預留充足時間，搭乘地鐵或打車。</p>
+                <p style="color: #008000; font-weight: bold;">旅程圓滿結束！期待下次旅行！</p>
+            </div>
+        </div>
+    </div>
+    
+    <h2>🏨 住宿選擇建議</h2>
+    <p>以下兩個區域都是南京旅遊熱門地，媽咪可以選擇喜歡的風格：</p>
+    
+    <div class="hotel-comparison">
+        <div class="hotel-option best">
+            <h3>⭐ 新街口商圈 (交通首選)</h3>
+            <ul>
+                <li>**優勢：** 地鐵**1號線與2號線交匯**，是交通核心，去哪都方便，特別適合長者。</li>
+                <li>**生活：** 購物、餐飲、超市高度集中，機能最完善。</li>
+                <li>**風格：** 現代化、繁華熱鬧。</li>
+            </ul>
+        </div>
+        <div class="hotel-option">
+            <h3>🏠 夫子廟/秦淮河風光帶 (文化氛圍)</h3>
+            <ul>
+                <li>**優勢：** 晚上可直接欣賞秦淮河夜景，不用趕車。</li>
+                <li>**生活：** 傳統小吃店多，充滿歷史氣息。</li>
+                <li>**風格：** 傳統古樸、熱鬧有情調。</li>
+            </ul>
+        </div>
+    </div>
+    
+    <button class="action-button" onclick="alert('我會隨時更新預約和天氣情況！旅行愉快！');">
+        點擊確認，我準備好出發了！
+    </button>
+</div>
+
+<script>
+    function toggleTab(header) {
+        const content = header.nextElementSibling;
+        const arrow = header.querySelector('.arrow');
+
+        // 檢查當前狀態
+        const isActive = header.classList.contains('active');
+
+        // 關閉所有其他開啟的選項卡 (手風琴效果)
+        document.querySelectorAll('.tab-header').forEach(h => {
+            if (h !== header && h.classList.contains('active')) {
+                h.classList.remove('active');
+                h.nextElementSibling.style.maxHeight = '0';
+                h.querySelector('.arrow').style.transform = 'rotate(0deg)';
+            }
+        });
+
+        // 開啟或關閉當前選項卡
+        if (isActive) {
+            // 關閉
+            header.classList.remove('active');
+            content.style.maxHeight = '0';
+            arrow.style.transform = 'rotate(0deg)';
+        } else {
+            // 開啟
+            header.classList.add('active');
+            // 設置 max-height 為內容的實際高度 (scrollHeight) 實現平滑展開
+            content.style.maxHeight = content.scrollHeight + 'px';
+            arrow.style.transform = 'rotate(180deg)';
+        }
+    }
+    
+    // 確保視窗大小改變時內容仍能正確展開/收合
+    window.addEventListener('resize', () => {
+        document.querySelectorAll('.tab-header.active').forEach(header => {
+            const content = header.nextElementSibling;
+            // 重新計算並設置 max-height
+            content.style.maxHeight = content.scrollHeight + 'px';
+        });
+    });
+</script>
+
+</body>
+</html>
